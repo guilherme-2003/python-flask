@@ -4,6 +4,7 @@ app = Flask("projeto")
 
 @app.route("/")
 def ola_mundo():
-    return render_template("alo.html")
+    nome = "Guilherme Paulela"
+    return render_template("alo.html", n=nome)
 
 app.run()
